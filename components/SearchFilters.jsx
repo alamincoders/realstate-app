@@ -12,8 +12,10 @@ const SearchFilters = () => {
     const { query } = router;
     const values = getFilterValues(filterValues);
 
-    values.map((item) => {
-      query[item.name] = item.value;
+    values.forEach((item) => {
+      if (item.value && filterValues?.[item.name]) {
+        query[item.name] = item.value;
+      }
     });
 
     router.push({ pathname: path, query });
