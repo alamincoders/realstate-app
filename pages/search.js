@@ -29,7 +29,7 @@ const Search = ({properties}) => {
         <Icon paddingLeft="2" w="7" as={BsFilter} />
       </Flex>
       {searchFilters && <SearchFilters />}
-      <Text fontSize="2xl" p="4" fontWight="bold">
+      <Text fontSize="2xl" p="4" fontWight="bold" >
         Properties {router.query.purpose}
       </Text>
       <Flex flexWrap="wrap">
