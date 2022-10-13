@@ -2,8 +2,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
@@ -22,5 +21,45 @@ a {
   body {
     color: white;
     background: black;
+  }
+}
+
+.hero {
+  min-height: 95vh;
+  position: relative;
+  background: linear-gradient(40deg, #1d3ede, #03daf6);
+  background-image: -ms-linear-gradient(40deg, #1d3ede 0, #03daf6 100%);
+  overflow: hidden;
+  margin-bottom: 4rem;
+  z-index: 1;
+}
+
+.svg_hero svg {
+  position: absolute;
+  bottom: -29px;
+  height: 350px;
+  width: 100%;
+  left: 0;
+  z-index: -1;
+}
+
+.button_hero {
+  margin-top: 20px;
+  color: white;
+  padding: 17px 28px;
+  border-radius: 5px;
+  box-shadow: -6px 4px 5px -6px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+  background: linear-gradient(90deg, #4a77f4 0, #00bade 51%, #4a77f4);
+}
+
+.button_hero:hover {
+  cursor: pointer;
+  background: linear-gradient(90deg, #00bade 0, #4a77f4 51%, #1d3ede);
+}
+
+@media only screen and (max-width: 768px) {
+  .svg_hero {
+    display: none;
   }
 }

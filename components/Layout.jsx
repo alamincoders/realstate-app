@@ -11,10 +11,12 @@ const Layout = ({ children }) => {
         <title>React Estate</title>
       </Head>
 
-      <Box maxWidth="1280px" m="auto">
-        <header>
-          <Navbar />
-        </header>
+      <Box>
+        <Box maxWidth="1280px" m="auto">
+          <header>
+            <Navbar />
+          </header>
+        </Box>
         <main>{children}</main>
         <footer>
           <Footer />

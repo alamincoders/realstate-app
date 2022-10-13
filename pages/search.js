@@ -12,7 +12,7 @@ const Search = ({properties}) => {
   const [searchFilters, setSearchFilters] = useState(false);
   const router = useRouter();
   return (
-    <Box>
+    <Box maxWidth="1280px" m="auto">
       <Flex
         cursor="pointer"
         bg="gray.100"

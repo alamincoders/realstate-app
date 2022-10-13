@@ -11,12 +11,12 @@ import DefaultImage from "../assets/house.jpg";
 const Property = ({ property }) => {
   const { coverPhoto, price, rentFrequency, rooms, title, baths, area, agency, isVerified, externalID } = property;
   return (
-    <Link href={`/property/${externalID}`} passHref>
-      <Flex flexWrap="wrap" w="420px" p="5" paddingTop="0" justifyContent="flex-start" cursor="pointer">
-        <Box>
-          <Image src={coverPhoto ? coverPhoto.url : DefaultImage} width={400} height={260} alt="house" />
+    <Link href={`/property/${externalID}`} passHref >
+      <Flex borderRadius="6px" boxShadow="-2px 3px 10px rgba(0,0,0,0.07)" m="3"  flexWrap="wrap" w="400px" p="5" paddingTop="0" justifyContent="flex-start" cursor="pointer">
+        <Box mt="3" >
+          <Image src={coverPhoto ? coverPhoto.url : DefaultImage} width={420} height={260} alt="house" />
         </Box>
-        <Box w="full">
+        <Box w="full" m >
           <Flex paddingTop="2" alignItems="center" justifyContent="space-between">
             <Flex alignItems="center">
               <Box paddingRight="3" color="green.400">
